@@ -943,7 +943,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#pillars">Topics</a></li>
     <li><a href="#videos">Videos</a></li>
-    <li><a href="#signup">Newsletter</a></li>
+    <li><a href="#freegift">Free PDF</a></li>
     <li><a href="https://youtube.com/@TheCuriosityHabit0" target="_blank" class="nav-cta">Watch Now</a></li>
   </ul>
   <div class="nav-toggle" id="navToggle">
@@ -1102,18 +1102,19 @@
   </div>
 </section>
 
-<!-- EMAIL SIGNUP -->
-<section class="signup" id="signup">
+<!-- FREE PDF LEAD MAGNET -->
+<section class="signup" id="freegift">
   <div class="signup-inner reveal">
     <div class="divider"></div>
-    <p class="section-label">Stay Curious</p>
-    <h2 class="section-title">Join The Curious Minds</h2>
-    <p class="section-subtitle">Get notified when new episodes drop. No spam — just stories worth knowing.</p>
+    <p class="section-label">🎁 Free Download</p>
+    <h2 class="section-title">Get 50 Curious History Facts</h2>
+    <p class="section-subtitle">A curated collection of the most fascinating stories from history — perfect for curious minds.</p>
     <div class="signup-form">
-      <input type="email" class="signup-input" placeholder="Your email address" id="emailInput">
-      <button class="signup-btn" onclick="handleSignup()">Subscribe</button>
+      <input type="email" class="signup-input" placeholder="Your email address" id="emailInput" style="max-width:300px;">
+      <button class="signup-btn" onclick="handleFreeDownload()">Get Free PDF</button>
     </div>
-    <p class="signup-note">Join curious minds from around the world. Unsubscribe anytime.</p>
+    <p class="signup-note">📬 We'll also send you new episodes. Unsubscribe anytime.</p>
+    <p style="margin-top:16px;font-size:12px;color:rgba(245,234,208,0.5);">📥 Downloaded 127 times</p>
   </div>
 </section>
 
@@ -1180,11 +1181,15 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // Email signup
-  function handleSignup() {
+  // Free PDF download
+  function handleFreeDownload() {
     const email = document.getElementById('emailInput').value;
     if (email && email.includes('@')) {
-      alert('Welcome to the curious minds community! 🧭\n\nWe\'ll notify you when new episodes drop.');
+      // In production, connect to email service (Mailchimp, ConvertKit, etc.)
+      // For now, direct download
+      const pdfUrl = 'https://github.com/thecuriosityhabit-create/Curiosity--Habit--web/raw/main/50-Curious-History-Facts.pdf';
+      window.open(pdfUrl, '_blank');
+      alert('🎉 Check your downloads!\n\nWelcome to the curious minds community! 🧭\n\nWe\'ll notify you when new episodes drop.');
       document.getElementById('emailInput').value = '';
     } else {
       alert('Please enter a valid email address.');
