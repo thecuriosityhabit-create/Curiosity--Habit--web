@@ -20,9 +20,9 @@
 <meta property="og:site_name" content="The Curiosity Habit">
 <meta property="og:title" content="The Curiosity Habit — There is a story behind everything.">
 <meta property="og:description" content="Fascinating facts, ancient mysteries, how things work and future discoveries. Every video goes deeper than the headlines. Because what we know is just the beginning.">
-<meta property="og:image" content="https://thecuriosityhabit.com/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image" content="https://thecuriosityhabit.com/favicon.svg">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
 <meta property="og:image:alt" content="The Curiosity Habit — Educational YouTube Channel">
 <meta property="og:locale" content="en_US">
 
@@ -33,7 +33,7 @@
 <meta name="twitter:url" content="https://thecuriosityhabit.com/">
 <meta name="twitter:title" content="The Curiosity Habit — There is a story behind everything.">
 <meta name="twitter:description" content="Fascinating facts, ancient mysteries, how things work and future discoveries. Because what we know is just the beginning.">
-<meta name="twitter:image" content="https://thecuriosityhabit.com/og-image.jpg">
+<meta name="twitter:image" content="https://thecuriosityhabit.com/favicon.svg">
 <meta name="twitter:image:alt" content="The Curiosity Habit — Educational YouTube Channel">
 
 <!-- ============ SCHEMA.ORG STRUCTURED DATA ============ -->
@@ -61,7 +61,7 @@
       "url": "https://thecuriosityhabit.com/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://thecuriosityhabit.com/logo.png",
+        "url": "https://thecuriosityhabit.com/favicon.svg",
         "width": 512,
         "height": 512
       },
@@ -112,6 +112,8 @@
 
 <!-- ============ SITEMAP ============ -->
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
 
 <!-- ============ FONTS ============ -->
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Raleway:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
@@ -907,6 +909,40 @@
     letter-spacing: 2px;
   }
 
+  .footer-resources {
+    margin: 24px 0;
+    padding: 20px;
+    background: rgba(10,46,53,0.3);
+    border-radius: 8px;
+    border: 1px solid rgba(232,160,32,0.1);
+  }
+
+  .footer-resources-title {
+    font-size: 12px;
+    color: var(--amber);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .footer-resources-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .footer-resources-links a {
+    font-size: 11px;
+    color: var(--cream-dim);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-resources-links a:hover {
+    color: var(--amber);
+  }
+
   /* ========== SCROLL ANIMATIONS ========== */
   .reveal {
     opacity: 0;
@@ -1181,6 +1217,19 @@
     <a href="#signup">Newsletter</a>
     <a href="#connect">Connect</a>
   </nav>
+  
+  <!-- Useful Resources -->
+  <div class="footer-resources">
+    <p class="footer-resources-title">📚 Useful Resources</p>
+    <div class="footer-resources-links">
+      <a href="https://www.worldhistory.org/" target="_blank" rel="noopener">World History Encyclopedia</a>
+      <a href="https://www.history.com/" target="_blank" rel="noopener">History Channel</a>
+      <a href="https://www.smithsonianmag.com/" target="_blank" rel="noopener">Smithsonian Magazine</a>
+      <a href="https://www.nationalgeographic.com/history" target="_blank" rel="noopener">National Geographic History</a>
+      <a href="https://www.archaeology.com/" target="_blank" rel="noopener">Archaeology Magazine</a>
+    </div>
+  </div>
+  
   <p class="footer-copy">© 2026 The Curiosity Habit · Because what we know is just the beginning.</p>
 </footer>
 
